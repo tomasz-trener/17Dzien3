@@ -8,6 +8,12 @@ namespace P01ZadanieKlasy
 {
     internal class Kalkulator
     {
+
+        private int dodaj(int a, int b)
+        {
+            return a + b;
+        }
+
         public double WykonajDzialanie(string rowanie) // 6^7
         {
             // 14+66           100*500+500  //  
@@ -19,7 +25,8 @@ namespace P01ZadanieKlasy
 
             if (tab1.Length==2)
             {
-                int wynik =Convert.ToInt32(tab1[0]) + Convert.ToInt32(tab1[1]);
+                // int wynik =Convert.ToInt32(tab1[0]) + Convert.ToInt32(tab1[1]);
+                int wynik = dodaj(Convert.ToInt32(tab1[0]), Convert.ToInt32(tab1[1]));
                 return wynik;
             }
 
