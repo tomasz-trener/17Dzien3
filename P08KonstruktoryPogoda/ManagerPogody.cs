@@ -12,6 +12,15 @@ namespace P08KonstruktoryPogoda
         private const string znakKoncowy = ">";
         private const string adres = "https://www.google.com/search?q=pogoda";
 
+        private string jednostka;
+        private string szukanyZnak;
+
+        public ManagerPogody(string jednostka, string szukanyZnak)
+        {
+            this.jednostka = jednostka;
+            this.szukanyZnak = szukanyZnak;
+        }
+
 
         public string Jednostka { get; set; }
         public string SzukanyZnak  { get; set; }

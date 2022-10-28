@@ -16,9 +16,10 @@ namespace P08KonstruktoryPogoda
             Console.WriteLine("Podaj jednostke w jakiej chcesz otrzymać wynik. " +
                 "Możliwe jednostki to f - farenheit, c - celcjusz lub k - kelvin");
 
-            ManagerPogody mp = new ManagerPogody();
-            mp.Jednostka = Console.ReadLine();
-            mp.SzukanyZnak = "°";
+            string jednostka = Console.ReadLine();
+            ManagerPogody mp = new ManagerPogody(jednostka, "°");
+           // mp.Jednostka = Console.ReadLine();
+           // mp.SzukanyZnak = "°";
 
             double wynik = mp.PodajTemperature("warszawa");
 
