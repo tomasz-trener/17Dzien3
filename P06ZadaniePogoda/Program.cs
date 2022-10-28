@@ -10,6 +10,7 @@ namespace P06ZadaniePogoda
     {
         static void Main(string[] args)
         {
+
         }
     }
 }
