@@ -10,6 +10,8 @@ namespace P02MetodyWKlasach
     {
         static void Main(string[] args)
         {
+            //https://github.com/tomasz-trener/17Dzien3
+
             Kalkulator k = new Kalkulator();
 
             int a=  k.Dodaj(4, 5);
