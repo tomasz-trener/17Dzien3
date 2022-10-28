@@ -16,6 +16,12 @@ namespace P10ZadanieKalkulator
                 k.WykonajOperacje(4, 5, Operacja.Mnozenie);
 
 
+            //string s = "ala%%ma&&Kota";
+
+            //string[] separatory = { "%%", "&&" };
+            //s.Split(separatory, StringSplitOptions.None);
+
+
         }
     }
 }
