@@ -19,15 +19,47 @@ namespace P10ZadanieKalkulator
         public double WykonajOperacje(int a, int b, Operacja operacja )
         {
             if (operacja == Operacja.Dodawanie)
-                return a + b;
+            {
+                KalkulatorDodajacy kd = new KalkulatorDodajacy();
+                return kd.Dodaj(a, b);
+            }
+               
             if (operacja == Operacja.Odejmowanie)
-                return a - b;
+            {
+                KalkulatorOdejmujacy ko = new KalkulatorOdejmujacy();
+                ko.Odejmij(a, b);
+            }       
+
             if (operacja == Operacja.Mnozenie)
-                return a * b;
+                return Mnozenie(a,b);
+
             if (operacja == Operacja.Dzielenie)
-                return a / b;
+                return Dzielenie(a,b);
 
             throw new Exception("Nieznana operacja");
+        }
+
+        //private double Dodaj(int a, int b)
+        //{
+        //    return a + b;
+        //}
+
+        //private double Odejmij(int a, int b)
+        //{
+        //    return a - b;
+        //}
+
+        private double Mnozenie(int a, int b)
+        {
+            int wynik = a;
+            for (int i = 0; i < b; i++)
+                a += a;
+            
+            return a;
+        }
+        private double Dzielenie(int a, int b)
+        {
+            return a / b;
         }
     }
 }
