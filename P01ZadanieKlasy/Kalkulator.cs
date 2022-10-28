@@ -25,24 +25,64 @@ namespace P01ZadanieKlasy
 
             if (tab2.Length == 2)
             {
-                int wynik = Convert.ToInt32(tab1[0]) - Convert.ToInt32(tab1[1]);
+                int wynik = Convert.ToInt32(tab2[0]) - Convert.ToInt32(tab2[1]);
                 return wynik;
             }
 
             if (tab3.Length == 2)
             {
-                int wynik = Convert.ToInt32(tab1[0]) * Convert.ToInt32(tab1[1]);
+                int wynik = Convert.ToInt32(tab3[0]) * Convert.ToInt32(tab3[1]);
                 return wynik;
             }
 
             if (tab4.Length == 2)
             {
-                double wynik = Convert.ToInt32(tab1[0]) / Convert.ToInt32(tab1[1]);
+                double wynik = Convert.ToInt32(tab4[0]) / Convert.ToInt32(tab4[1]);
                 return wynik;
             }
 
             //return "zły operator";
             throw new Exception("Podano zły operator");
+
+        }
+
+
+        public void WykonajDzialanie2(string rownanie)
+        {
+            // 14+66           100*500+500  //  
+            string[] tab1 = rownanie.Split('+'); //[100*500]  
+            string[] tab2 = rownanie.Split('-'); //[100*500]
+            string[] tab3 = rownanie.Split('*'); //[100] [500]
+            string[] tab4 = rownanie.Split('/'); //[100*500]
+
+
+            if (tab1.Length == 2)
+            {
+                int wynik = Convert.ToInt32(tab1[0]) + Convert.ToInt32(tab1[1]);
+                Console.WriteLine(wynik);
+            }
+
+            if (tab2.Length == 2)
+            {
+                int wynik = Convert.ToInt32(tab2[0]) - Convert.ToInt32(tab2[1]);
+                Console.WriteLine(wynik);
+            }
+
+            if (tab3.Length == 2)
+            {
+                int wynik = Convert.ToInt32(tab3[0]) * Convert.ToInt32(tab3[1]);
+                Console.WriteLine(wynik);
+            }
+
+            if (tab4.Length == 2)
+            {
+                double wynik = Convert.ToInt32(tab4[0]) / Convert.ToInt32(tab4[1]);
+                Console.WriteLine(wynik);
+            }
+
+            //return "zły operator";
+            // throw new Exception("Podano zły operator");
+            Console.WriteLine("Podano zły operator");
 
         }
     }
