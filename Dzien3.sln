@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P08KonstruktoryPogoda", "P0
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P09Enumeratory", "P09Enumeratory\P09Enumeratory.csproj", "{AC8F9F5A-ADE2-447D-9D94-E327CDFC8C7F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P10ZadanieKalkulator", "P10ZadanieKalkulator\P10ZadanieKalkulator.csproj", "{A0C9D022-E705-467F-8DC7-14A72278E039}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{AC8F9F5A-ADE2-447D-9D94-E327CDFC8C7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AC8F9F5A-ADE2-447D-9D94-E327CDFC8C7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AC8F9F5A-ADE2-447D-9D94-E327CDFC8C7F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A0C9D022-E705-467F-8DC7-14A72278E039}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0C9D022-E705-467F-8DC7-14A72278E039}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0C9D022-E705-467F-8DC7-14A72278E039}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0C9D022-E705-467F-8DC7-14A72278E039}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

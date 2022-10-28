@@ -1,0 +1,8 @@
+﻿
+
+
+Stworz klase kalkualtor, która posaida publiczna metode wykonaj operacje 
+z trzema arguemntami wejsciowymi: liczba1, liczba2 i operacja
+
+metoda zwraca wynik 
+
