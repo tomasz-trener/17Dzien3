@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P01ZadanieKlasy", "P01Zadan
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P02MetodyWKlasach", "P02MetodyWKlasach\P02MetodyWKlasach.csproj", "{086F1E97-3421-45D3-BE7A-23D22EAF0D14}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P03ObslugaBledow", "P03ObslugaBledow\P03ObslugaBledow.csproj", "{F2735313-04C7-45A0-BF79-77715767A74F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{086F1E97-3421-45D3-BE7A-23D22EAF0D14}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{086F1E97-3421-45D3-BE7A-23D22EAF0D14}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{086F1E97-3421-45D3-BE7A-23D22EAF0D14}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2735313-04C7-45A0-BF79-77715767A74F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2735313-04C7-45A0-BF79-77715767A74F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2735313-04C7-45A0-BF79-77715767A74F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2735313-04C7-45A0-BF79-77715767A74F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
