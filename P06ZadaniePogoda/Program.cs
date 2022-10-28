@@ -10,7 +10,7 @@ namespace P06ZadaniePogoda
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("POdaj miasto");
+            Console.WriteLine("Pdaj miasto");
             string miasto = Console.ReadLine();
 
             Console.WriteLine("Podaj jednostke w jakiej chcesz otrzymać wynik. " +

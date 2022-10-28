@@ -15,6 +15,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P05Wlasciwosci", "P50Wlasci
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P06ZadaniePogoda", "P06ZadaniePogoda\P06ZadaniePogoda.csproj", "{1F794D03-6DC9-443B-8AD5-EC52266FD97C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P07Konstruktory", "P07Konstruktory\P07Konstruktory.csproj", "{24E9B948-C202-4AB4-A17F-08EFF1E56659}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P08KonstruktoryPogoda", "P08KonstruktoryPogoda\P08KonstruktoryPogoda.csproj", "{249C7948-0D23-417D-BED1-3245CA0FA78D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +49,14 @@ Global
 		{1F794D03-6DC9-443B-8AD5-EC52266FD97C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1F794D03-6DC9-443B-8AD5-EC52266FD97C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1F794D03-6DC9-443B-8AD5-EC52266FD97C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24E9B948-C202-4AB4-A17F-08EFF1E56659}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24E9B948-C202-4AB4-A17F-08EFF1E56659}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24E9B948-C202-4AB4-A17F-08EFF1E56659}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24E9B948-C202-4AB4-A17F-08EFF1E56659}.Release|Any CPU.Build.0 = Release|Any CPU
+		{249C7948-0D23-417D-BED1-3245CA0FA78D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{249C7948-0D23-417D-BED1-3245CA0FA78D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{249C7948-0D23-417D-BED1-3245CA0FA78D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{249C7948-0D23-417D-BED1-3245CA0FA78D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
