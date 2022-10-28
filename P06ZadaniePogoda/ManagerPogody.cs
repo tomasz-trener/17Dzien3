@@ -9,8 +9,12 @@ namespace P06ZadaniePogoda
 {
     internal class ManagerPogody
     {
-        public string Jednostka { get; set; }
+        private const string znakKoncowy = ">";
+        private const string adres = "https://www.google.com/search?q=pogoda";
 
+
+        public string Jednostka { get; set; }
+        public string SzukanyZnak  { get; set; }
 
         private double TransformujTemeprature(double temp)
         {
@@ -29,15 +33,12 @@ namespace P06ZadaniePogoda
 
         public double PodajTemperature(string miasto)
         {
-            string szukanyZnak = "°";
-            string znakKoncowy = ">";
-    
-            string adres = $"https://www.google.com/search?q=pogoda {miasto}";
+           // adres = "www.yahoo.com";
 
             WebClient wc = new WebClient();
-            string dane = wc.DownloadString(adres);
+            string dane = wc.DownloadString(adres + "+" + miasto);
 
-            int indx = dane.IndexOf(szukanyZnak);
+            int indx = dane.IndexOf(SzukanyZnak);
             int aktuanaPozycja = indx;
 
             while (dane.Substring(aktuanaPozycja, 1) != znakKoncowy)

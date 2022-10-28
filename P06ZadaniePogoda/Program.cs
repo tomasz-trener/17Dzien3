@@ -18,6 +18,7 @@ namespace P06ZadaniePogoda
 
             ManagerPogody mp = new ManagerPogody();
             mp.Jednostka = Console.ReadLine();
+            mp.SzukanyZnak = "°";
 
             double wynik= mp.PodajTemperature("warszawa");
 
