@@ -1,0 +1,9 @@
+﻿
+
+Stworz klase ManagerPogody , ktora bedzie udsotepniac metode "Podaj temperature" dla danego miasta 
+
+Dodaj właściwość określającą jednostkę w jakiej temepratura ma być podana
+
+dostępne jednostki to:
+
+Celcjusz, Farenheit i Kelvin
