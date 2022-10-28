@@ -38,6 +38,14 @@ namespace P10ZadanieKalkulator
 
             throw new Exception("Nieznana operacja");
         }
+        //szkolenia@tomaszles.pl
+        //tomaszles.pl
+
+        // http://pl.spoj.com/problems/JHTMLLET/
+
+        // https://www.codewars.com/ 
+
+
 
         //private double Dodaj(int a, int b)
         //{
