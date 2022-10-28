@@ -23,8 +23,15 @@ namespace P01ZadanieKlasy
             Kalkulator k2 = new Kalkulator();
             k2.WykonajDzialanie(rownanie);
 
+            InnaKlasa ik = new InnaKlasa();
 
             Console.ReadKey();
         }
     }
+
+
+    public class InnaKlasa 
+    { 
+    }
+
 }
