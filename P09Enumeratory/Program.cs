@@ -40,8 +40,8 @@ namespace P09Enumeratory
  
             ManagerPogody mp = new ManagerPogody((Jednostka)jd, "°");
             double wyn =mp.PodajTemperature("warszawa");
-
-
+            Console.WriteLine(wyn);
+            Console.ReadKey();
         }
     }
 }
