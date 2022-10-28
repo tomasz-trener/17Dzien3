@@ -7,6 +7,14 @@ using System.Threading.Tasks;
 
 namespace P09Enumeratory
 {
+    enum Jednostka
+    {
+        Celcjusz,
+        Kelvin,
+        Farenheit
+    }
+
+
     internal class ManagerPogody
     {
        // public string PolePubliczne;
@@ -14,17 +22,22 @@ namespace P09Enumeratory
         private const string znakKoncowy = ">";
         private const string adres = "https://www.google.com/search?q=pogoda";
 
-        private string jednostka;
+        private Jednostka jednostka;
         private string szukanyZnak;
 
-        public ManagerPogody(string jednostka, string szukanyZnak)
+        /// <summary>
+        /// Tworzenie narzędzia do pobierania temepertury dla zadanego miasta z seriwsu google.
+        /// </summary>
+        /// <param name="jednostka">Podaj jednostkę jako c lub f lub k</param>
+        /// <param name="szukanyZnak">podaj znak celcjeusza gy korzystasz z seriwsu google</param>
+        public ManagerPogody(Jednostka jednostka, string szukanyZnak)
         {
             this.jednostka = jednostka;
             this.szukanyZnak = szukanyZnak;
         }
 
 
-        public string Jednostka
+        public Jednostka Jednostka
         {
             get
             {
@@ -41,19 +54,24 @@ namespace P09Enumeratory
 
         private double TransformujTemeprature(double temp)
         {
-            if (jednostka == "c")
+            if (jednostka == Jednostka.Celcjusz)
                 return temp;
 
-            if(jednostka == "f")
+            if(jednostka == Jednostka.Farenheit)
                 return (temp *1.8)+32;
 
 
-            if (jednostka == "k")
+            if (jednostka == Jednostka.Kelvin)
                 return temp + 273.15;
 
             throw new Exception("Nieznana jednostka");
         }
 
+        /// <summary>
+        /// Zwraca temerature dla podnaego miasta 
+        /// </summary>
+        /// <param name="miasto">podaj nazwe miasta</param>
+        /// <returns>zwraca temeprature w ustawionej wcześniej jednostce</returns>
         public double PodajTemperature(string miasto)
         {
            // adres = "www.yahoo.com";

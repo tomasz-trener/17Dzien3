@@ -10,6 +10,15 @@ namespace P09Enumeratory
     {
         static void Main(string[] args)
         {
+            //  Console.WriteLine()
+
+            
+
+            ManagerPogody mp = new ManagerPogody(Jednostka.Celcjusz, "°");
+           
+            double wyn =mp.PodajTemperature("warszawa");
+
+
         }
     }
 }
