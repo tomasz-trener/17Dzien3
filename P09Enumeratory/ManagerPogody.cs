@@ -9,6 +9,8 @@ namespace P09Enumeratory
 {
     internal class ManagerPogody
     {
+       // public string PolePubliczne;
+
         private const string znakKoncowy = ">";
         private const string adres = "https://www.google.com/search?q=pogoda";
 
@@ -22,19 +24,31 @@ namespace P09Enumeratory
         }
 
 
-        public string Jednostka { get; set; }
-        public string SzukanyZnak  { get; set; }
+        public string Jednostka
+        {
+            get
+            {
+                return jednostka;
+            }
+            set
+            {
+                jednostka = value;
+            }
+        }
+        //  public string Jednostka { get; set; }
+      
+        // public string SzukanyZnak  { get; set; }
 
         private double TransformujTemeprature(double temp)
         {
-            if (Jednostka == "c")
+            if (jednostka == "c")
                 return temp;
 
-            if(Jednostka=="f")
+            if(jednostka == "f")
                 return (temp *1.8)+32;
 
 
-            if (Jednostka == "k")
+            if (jednostka == "k")
                 return temp + 273.15;
 
             throw new Exception("Nieznana jednostka");
@@ -47,7 +61,7 @@ namespace P09Enumeratory
             WebClient wc = new WebClient();
             string dane = wc.DownloadString(adres + "+" + miasto);
 
-            int indx = dane.IndexOf(SzukanyZnak);
+            int indx = dane.IndexOf(szukanyZnak);
             int aktuanaPozycja = indx;
 
             while (dane.Substring(aktuanaPozycja, 1) != znakKoncowy)

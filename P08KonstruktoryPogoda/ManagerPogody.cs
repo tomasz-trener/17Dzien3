@@ -35,7 +35,7 @@ namespace P08KonstruktoryPogoda
                 jednostka = value;
             }
         }
-      //  public string Jednostka { get; set; }
+        //  public string Jednostka { get; set; }
       
         // public string SzukanyZnak  { get; set; }
 
