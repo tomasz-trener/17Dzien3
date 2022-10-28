@@ -10,7 +10,7 @@ namespace P08KonstruktoryPogoda
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Pdaj miasto");
+            Console.WriteLine("Podaj miasto");
             string miasto = Console.ReadLine();
 
             Console.WriteLine("Podaj jednostke w jakiej chcesz otrzymać wynik. " +
@@ -22,6 +22,16 @@ namespace P08KonstruktoryPogoda
            // mp.SzukanyZnak = "°";
 
             double wynik = mp.PodajTemperature("warszawa");
+
+            // po jakimś czasie 
+
+            //ManagerPogody mp2 = new ManagerPogody("k", "°");
+            //double wynik2= mp2.PodajTemperature("warszawa");
+
+            //string x = mp.Jednostka;
+            
+            mp.Jednostka = "k";
+            mp.PodajTemperature("warszawa");
 
             Console.WriteLine(wynik);
             Console.ReadKey();

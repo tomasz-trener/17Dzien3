@@ -5,12 +5,10 @@ using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace P08KonstruktoryPogoda
+namespace P09Enumeratory
 {
     internal class ManagerPogody
     {
-       // public string PolePubliczne;
-
         private const string znakKoncowy = ">";
         private const string adres = "https://www.google.com/search?q=pogoda";
 
@@ -24,31 +22,19 @@ namespace P08KonstruktoryPogoda
         }
 
 
-        public string Jednostka
-        {
-            get
-            {
-                return jednostka;
-            }
-            set
-            {
-                jednostka = value;
-            }
-        }
-      //  public string Jednostka { get; set; }
-      
-        // public string SzukanyZnak  { get; set; }
+        public string Jednostka { get; set; }
+        public string SzukanyZnak  { get; set; }
 
         private double TransformujTemeprature(double temp)
         {
-            if (jednostka == "c")
+            if (Jednostka == "c")
                 return temp;
 
-            if(jednostka == "f")
+            if(Jednostka=="f")
                 return (temp *1.8)+32;
 
 
-            if (jednostka == "k")
+            if (Jednostka == "k")
                 return temp + 273.15;
 
             throw new Exception("Nieznana jednostka");
@@ -61,7 +47,7 @@ namespace P08KonstruktoryPogoda
             WebClient wc = new WebClient();
             string dane = wc.DownloadString(adres + "+" + miasto);
 
-            int indx = dane.IndexOf(szukanyZnak);
+            int indx = dane.IndexOf(SzukanyZnak);
             int aktuanaPozycja = indx;
 
             while (dane.Substring(aktuanaPozycja, 1) != znakKoncowy)
