@@ -1,42 +1,44 @@
-﻿using P04ZadanieManagerTekstu.Exceptions;
+﻿using P50Wlasciwosci.Exceptions;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace P04ZadanieManagerTekstu
+namespace P50Wlasciwosci
 {
     internal class ManagerTekstu
     {
-        public string ZnajdzNajdluzszyWyraz(string zdanie)
+        public string Zdanie { get; set; }
+
+        public string ZnajdzNajdluzszyWyraz()
         {
-            if (zdanie.Length < 1)
+            if (Zdanie.Length < 1)
                 throw new ToShortSentenseException();
 
-            string[] wyrazy = zdanie.Split(' ');
+            string[] wyrazy = Zdanie.Split(' ');
 
             string aktualnieNajdluzszy = "";
             foreach (var w in wyrazy)
                 if (w.Length > aktualnieNajdluzszy.Length)
                     aktualnieNajdluzszy = w;
-            
+
             return aktualnieNajdluzszy;
         }
 
-        public string[] ZnajdzWszystkieNajdluzszeWyrazy(string zdanie)
+        public string[] ZnajdzWszystkieNajdluzszeWyrazy()
         {
-            if (zdanie.Length < 1)
+            if (Zdanie.Length < 1)
                 throw new ToShortSentenseException();
 
-            string najdluszy = ZnajdzNajdluzszyWyraz(zdanie);
-            return znajdzWyrazyOPodanejDlugosc(najdluszy.Length, zdanie);
+            string najdluszy = ZnajdzNajdluzszyWyraz();
+            return znajdzWyrazyOPodanejDlugosc(najdluszy.Length);
         }
 
-        private string[] znajdzWyrazyOPodanejDlugosc(int dlugosc, string zdanie)
+        private string[] znajdzWyrazyOPodanejDlugosc(int dlugosc)
         {
             List<string> znalezione = new List<string>();
-            string[] wyrazy = zdanie.Split(' ');
+            string[] wyrazy = Zdanie.Split(' ');
             foreach (var w in wyrazy)
                 if (w.Length == dlugosc)
                     znalezione.Add(w);

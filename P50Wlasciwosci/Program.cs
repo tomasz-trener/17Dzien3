@@ -1,11 +1,11 @@
-﻿using P04ZadanieManagerTekstu.Exceptions;
+﻿using P50Wlasciwosci.Exceptions;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace P04ZadanieManagerTekstu
+namespace P50Wlasciwosci
 {
     internal class Program
     {
@@ -15,14 +15,14 @@ namespace P04ZadanieManagerTekstu
             string zdanie = Console.ReadLine();
 
             ManagerTekstu mt = new ManagerTekstu();
-
+            mt.Zdanie = zdanie;
             try
-            { 
-                string najdluzszy= mt.ZnajdzNajdluzszyWyraz(zdanie);
+            {
+                string najdluzszy = mt.ZnajdzNajdluzszyWyraz();
 
                 Console.WriteLine("Pierwszy najdluższy: " + najdluzszy);
 
-                string[] wyrazy = mt.ZnajdzWszystkieNajdluzszeWyrazy(zdanie);
+                string[] wyrazy = mt.ZnajdzWszystkieNajdluzszeWyrazy();
 
                 Console.WriteLine("Wszystkie najdłuższe: " + string.Join(", ", wyrazy));
             }
@@ -34,7 +34,7 @@ namespace P04ZadanieManagerTekstu
             {
                 Console.WriteLine("Nieznany błąd");
             }
-         
+
 
             Console.ReadKey();
         }
